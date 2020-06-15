@@ -1,0 +1,14 @@
+h1,
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    line-height: 1.25;
+}
+
+p,
+address,
+ul,
+li {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.375;
+    font-size: .75rem;
+}

@@ -632,6 +632,10 @@ video {
   display: flex;
 }
 
+.w-5 {
+  width: 1.25rem;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -642,6 +646,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -811,5 +819,11 @@ video {
 
   .sm\:items-start {
     align-items: flex-start;
+  }
+}
+
+@media print {
+  .print\:hidden {
+    display: none;
   }
 }

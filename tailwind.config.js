@@ -5,7 +5,11 @@ module.exports = {
   ],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'print': {'raw': 'print'},
+      }
+    },
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],
       display: ['Big Shoulders Display', 'cursive']

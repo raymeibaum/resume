@@ -1,17 +1,20 @@
 module.exports = {
-    purge: {
-      enabled: true,
-      content: ['./*.html'],
+  mode: 'jit',
+  purge: [
+    './index.html',
+  ],
+  darkMode: 'media', // or 'media' or 'class'
+  theme: {
+    extend: {},
+    fontFamily: {
+      sans: ['Roboto', 'sans-serif'],
+      display: ['Big Shoulders Display', 'cursive']
     },
-    theme: {
-      extend: {},
-      fontFamily: {
-        sans: ['Roboto', 'sans-serif'],
-        display: ['Big Shoulders Display', 'cursive']
-      },
-    },
-    variants: {
-      extend: {},
-    },
-    plugins: [],
-  }
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [
+    require("tailwindcss-padding-safe")()
+  ],
+}

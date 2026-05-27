@@ -2,17 +2,17 @@
   "name": "resume",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "autoprefixer": "^10.2.6",
-    "lodash": "^4.17.21",
-    "postcss": "^8.3.5",
-    "tailwindcss": "^2.2.4",
-    "tailwindcss-padding-safe": "^1.0.5"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"tailwindcss -i ./css/input.css -o ./css/style.css --watch --minify\" \"live-server --watch=index.html,css/style.css\"",
+    "build": "tailwindcss -i ./css/input.css -o ./css/style.css --minify"
+  },
+  "dependencies": {
+    "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "concurrently": "^9.2.1",
+    "live-server": "^1.2.0"
   },
   "repository": {
     "type": "git",

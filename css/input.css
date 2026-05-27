@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Roboto', sans-serif;
+  --font-display: 'Big Shoulders Display', cursive;
+}
+
+@custom-variant dark (@media (prefers-color-scheme: dark));
+@custom-variant print (@media print);
+
+@layer components {
+    .badge {
+        @apply inline-block rounded bg-gray-200 dark:bg-gray-700 px-2 py-0.5 text-xs font-medium;
+    }
+}

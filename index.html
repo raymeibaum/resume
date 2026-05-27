@@ -7,7 +7,7 @@
     <title>Ray Meibaum's Resume</title>
     <meta property="og:title" content="Ray Meibaum's Resume">
     <meta property="og:description"
-        content="Ray is an experienced backend engineer passionate about PHP and Laravel, open to new roles.">
+        content="Senior backend engineer with 8+ years building distributed systems and shipping products. Experienced in PHP/Laravel, Go, Java, and AWS. Founder of haircontinuity.com.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://resume.ray.meibaum.me">
     <meta property="og:image"
@@ -20,16 +20,18 @@
     <style media="print">
         @page {
             size: auto;
+            margin: 0;
         }
     </style>
 </head>
 
 <body class="bg-zinc-50 dark:bg-zinc-900 print:bg-white dark:text-zinc-200 max-w-3xl mx-auto p-4 space-y-4">
-    <header class="text-zinc-900 dark:text-zinc-50 flex items-center gap-4">
+    <header class="text-zinc-900 dark:text-zinc-50 flex items-center gap-3">
         <img src="https://www.gravatar.com/avatar/daa67e80f49a1a73647b7265e645bf424d6816f7b20178677482bc863df878f3?s=512"
-            alt="Ray Meibaum" class="rounded-full w-16 h-16 sm:w-20 sm:h-20 object-cover shrink-0">
+            alt="Ray Meibaum" class="rounded-full w-24 h-24 sm:w-20 sm:h-20 object-cover shrink-0">
         <div class="flex-1 min-w-0">
             <h1 class="font-display font-bold leading-none uppercase text-4xl">Ray Meibaum</h1>
+            <a href="mailto:ray@meibaum.me" class="leading-snug text-sm mt-1">ray@meibaum.me</a>
             <p class="leading-snug text-sm mt-1">
                 Atlanta, GA &middot;
                 <a href="https://www.linkedin.com/in/raymeibaum/" target="_blank" rel="noopener noreferrer">LinkedIn</a> &middot;
@@ -46,11 +48,14 @@
             <section id="summary" class="break-inside-avoid">
                 <h2 class="font-display uppercase text-2xl text-zinc-800 dark:text-zinc-100">Summary</h2>
                 <div class="leading-snug text-sm space-y-3">
-                    <p>Experienced backend engineer with 8 years of professional experience, including 4 years building and
-                        scaling
-                        distributed systems for tens of millions of users at Intuit Mailchimp. Passionate about PHP and Laravel,
-                        open to
-                        roles where I can deliver real product value through clean, maintainable backend engineering.</p>
+                    <p>Senior backend engineer with over eight years of experience building distributed systems and customer-facing
+                        products,
+                        including more than four years at Intuit Mailchimp supporting infrastructure at massive scale. Experienced in
+                        PHP/Laravel,
+                        Go,
+                        Java, and AWS, with a strong focus on reliability, maintainability, and pragmatic product engineering. Founder of <a
+                            href="https://haircontinuity.com" target="_blank" rel="noopener noreferrer">haircontinuity.com</a>, a live SaaS
+                        platform built and operated independently.</p>
                 </div>
             </section>
             <section id="experience">
@@ -62,41 +67,48 @@
                         <div class="space-y-2 mt-1">
                             <div>
                                 <p class="text-sm font-semibold leading-relaxed">haircontinuity.com</p>
-                                <p class="leading-snug text-sm">Independently designed, built, and launched <a
-                                        href="https://haircontinuity.com" target="_blank"
-                                        rel="noopener noreferrer">haircontinuity.com</a>, a SaaS app for hairstylists to
-                                    document client history and track what works &mdash; live and accepting customers. Built on the
-                                    TALL stack
-                                    (Tailwind, Alpine, Livewire, Laravel) with Stripe billing via Laravel Cashier, Cloudflare R2
-                                    image storage,
-                                    AI-powered visit summaries via Google Gemini Flash Lite, and deployed on Laravel Cloud.</p>
+                                <ul class="list-disc list-outside text-sm leading-snug space-y-1 mt-1 ml-4">
+                                    <li>Independently designed, built, and launched <a href="https://haircontinuity.com" target="_blank"
+                                            rel="noopener noreferrer">haircontinuity.com</a>, a SaaS platform for hairstylists to document client
+                                        history and maintain service consistency &mdash; live and accepting customers</li>
+                                    <li>Built on the TALL stack (Tailwind, Alpine, Livewire, Laravel) with Stripe billing via Laravel Cashier,
+                                        Cloudflare R2 image storage, and AI-powered visit summaries via Google Gemini Flash Lite; deployed on Laravel
+                                        Cloud</li>
+                                </ul>
                             </div>
                         </div>
                         </div>
                     <div class="break-inside-avoid">
                         <h3 class="text-sm uppercase font-semibold leading-relaxed">Senior Software Engineer, Intuit Mailchimp &mdash; September
-                            2021&ndash;Present</h3>
+                            2021&ndash;July 2026</h3>
                         <div class="space-y-2 mt-1">
                             <div>
                                 <p class="text-sm font-semibold leading-relaxed">Link Shortening Service Rebuild</p>
-                                <p class="leading-snug text-sm">Rebuilt the link-shortening service in Java Spring Boot and migrated its data
-                                    store from MySQL to DynamoDB Global Tables, creating an active/active topology that reduced p50 latency from
-                                    50ms to 3ms.</p>
+                                <ul class="list-disc list-outside text-sm leading-snug space-y-1 mt-1 ml-4">
+                                    <li>Rebuilt the link-shortening service in Java Spring Boot</li>
+                                    <li>Migrated the data store from MySQL to DynamoDB Global Tables, creating a multi-region active-active topology
+                                    </li>
+                                    <li>Reduced p50 latency from 50ms to 3ms</li>
+                                </ul>
                             </div>
                             <div>
                                 <p class="text-sm font-semibold leading-relaxed">User Data Migration to AWS RDS</p>
-                                <p class="leading-snug text-sm">As part of a larger initiative to decommission colocated infrastructure, led two of 21
-                                    shard groups (4 engineers each) in the live migration of 14 million Mailchimp user accounts to Amazon RDS using a
-                                    custom Go service built on Shopify&rsquo;s Ghostferry framework. The 9-month, zero-downtime migration included
-                                    leading the latin1-encoded shards, where character-set mismatches required custom normalization scripts to safely
-                                    preserve data integrity.</p>
+                                <ul class="list-disc list-outside text-sm leading-snug space-y-1 mt-1 ml-4">
+                                    <li>Led two of 21 shard migration groups (4 engineers each) in the live, zero-downtime migration of 14 million
+                                        Mailchimp user accounts to Amazon RDS using a custom Go service built on Shopify&rsquo;s Ghostferry framework
+                                    </li>
+                                    <li>Led the latin1-encoded shard migration, where character-set mismatches required custom normalization scripts to
+                                        safely preserve data integrity</li>
+                                </ul>
                                 </div>
                                 <div>
                                 <p class="text-sm font-semibold leading-relaxed">HTTP Interposer</p>
-                                <p class="leading-snug text-sm">Contributed to building a Go-based HTTP proxy service that routed traffic across
-                                    Mailchimp&rsquo;s colocated, GCP, and AWS environments during a major cloud migration. As the infrastructure
-                                    consolidated to AWS, the service evolved into a single pane of observability and a load balancer across
-                                    Kubernetes clusters &mdash; and remains in production today.</p>
+                                <ul class="list-disc list-outside text-sm leading-snug space-y-1 mt-1 ml-4">
+                                    <li>Contributed to building a Go-based HTTP proxy routing traffic across Mailchimp&rsquo;s colocated, GCP, and AWS
+                                        environments during a major cloud migration</li>
+                                    <li>As infrastructure consolidated to AWS, the service evolved into a single pane of observability and load balancer
+                                        across Kubernetes clusters &mdash; remains in production today</li>
+                                </ul>
                                 </div>
                                 </div>
                                 </div>
@@ -106,18 +118,18 @@
                         <div class="space-y-2 mt-1">
                             <div>
                                 <p class="text-sm font-semibold leading-relaxed">PVSA</p>
-                                <p class="leading-snug text-sm">Led development of a greenfield rewrite of <a
-                                        href="https://presidentialserviceawards.gov" target="_blank"
-                                        rel="noopener noreferrer">presidentialserviceawards.gov</a>, a Laravel application for managing Presidential
-                                    volunteer service awards, as part of a 3-person engineering team. Included migrating legacy data from Salesforce
-                                    into PostgreSQL.</p>
+                                <ul class="list-disc list-outside text-sm leading-snug space-y-1 mt-1 ml-4">
+                                    <li>Led development of a greenfield rewrite of <a href="https://presidentialserviceawards.gov" target="_blank"
+                                            rel="noopener noreferrer">presidentialserviceawards.gov</a>, a Laravel application for managing Presidential
+                                        volunteer service awards, as part of a 3-person engineering team</li>
+                                        <li>Migrated legacy data from Salesforce into PostgreSQL</li>
+                                        </ul>
                                 </div>
                                 </div>
                                 </div>
                     <div class="break-inside-avoid">
                         <h3 class="text-sm uppercase font-semibold leading-relaxed">Junior Developer, Morrison Agency &mdash; June
                             2017&ndash;November 2017</h3>
-                        <p class="leading-snug text-sm mt-1">Worked on a Laravel/AngularJS web application for Mitsubishi Electric.</p>
                         </div>
                         </div>
             </section>
@@ -129,7 +141,7 @@
                         Boot</p>
                     <p><span class="font-semibold">Infrastructure &amp; Data:</span> AWS (DynamoDB, RDS), GCP, Kubernetes, MySQL,
                         PostgreSQL, Cloudflare R2</p>
-                    <p><span class="font-semibold">Monitoring:</span> Splunk, Grafana</p>
+                    <p><span class="font-semibold">Monitoring:</span> Splunk, Grafana, Wavefront</p>
                 </div>
             </section>
             <section id="education" class="break-inside-avoid">
@@ -138,8 +150,8 @@
                     <div>
                         <h3 class="text-sm uppercase font-semibold leading-relaxed">General Assembly (Atlanta), Certificate &mdash; February
                             2017&ndash;June 2017</h3>
-                        <p class="leading-snug text-sm">Completed the Web Development Immersive certificate program. MEAN stack was focused
-                            although Ruby on Rails and NoSQL databases were also studied.</p>
+                        <p class="leading-snug text-sm">Focused on the MEAN stack, with additional exposure to Ruby on Rails and NoSQL
+                            databases.</p>
                     </div>
                     <div>
                         <h3 class="text-sm uppercase font-semibold leading-relaxed">Full Sail University, BS Film Production &mdash; June
@@ -147,15 +159,6 @@
                         <p class="leading-snug text-sm">Earned a Bachelor of Science in Film Production.</p>
                         </div>
                         </div>
-            </section>
-            <section id="references" class="break-inside-avoid">
-                <h2 class="font-display uppercase text-2xl text-zinc-800 dark:text-zinc-100">References</h2>
-                <div class="space-y-3">
-                    <h3 class="text-sm uppercase font-semibold leading-relaxed">Brandon Beacher &mdash; VP of Technology, SmartPath
-                    </h3>
-                    <h3 class="text-sm uppercase font-semibold leading-relaxed">Spencer Malone &mdash; Senior Staff Engineer, Intuit
-                        Mailchimp</h3>
-                </div>
             </section>
             </main>
 </body>

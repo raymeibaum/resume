@@ -18,7 +18,7 @@ await page.pdf({
   path: pdfPath,
   format: "Letter",
   printBackground: true,
-  margin: { top: "0.5in", right: "0.5in", bottom: "0.5in", left: "0.5in" },
+  margin: { top: "0.2in", right: "0.35in", bottom: "0.2in", left: "0.35in" },
 });
 await browser.close();
 

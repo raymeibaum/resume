@@ -2,7 +2,7 @@
 
 @theme {
     --font-sans: 'Roboto', sans-serif;
-        --font-display: 'Big Shoulders Display', cursive;
+    --font-display: 'Big Shoulders Display', cursive;
 }
 
 @custom-variant dark (@media (prefers-color-scheme: dark));
@@ -12,23 +12,24 @@
     .badge {
         @apply inline-block rounded bg-gray-200 dark:bg-gray-700 px-2 py-0.5 text-xs font-medium;
     }
-.title-heading {
-    @apply font-display uppercase text-4xl leading-none text-zinc-900 dark:text-zinc-50;
-}
 
-.section-heading {
-    @apply font-display uppercase text-xl leading-tight text-zinc-900 dark:text-zinc-50;
-}
+        .title-heading {
+            @apply font-display uppercase text-4xl leading-none text-zinc-900 dark:text-zinc-50;
+        }
 
-.job-title {
-    @apply text-sm uppercase font-semibold leading-snug text-zinc-900 dark:text-zinc-50;
-}
+        .section-heading {
+            @apply font-display uppercase text-xl leading-tight text-zinc-900 dark:text-zinc-50;
+        }
 
-.project-label {
-    @apply text-sm font-semibold leading-snug text-zinc-900 dark:text-zinc-50;
-}
+        .job-title {
+            @apply text-sm uppercase font-semibold leading-snug text-zinc-900 dark:text-zinc-50;
+        }
 
-.bullets {
-    @apply list-disc list-outside text-sm leading-snug ml-4;
-}
+        .project-label {
+            @apply text-sm font-semibold leading-snug text-zinc-900 dark:text-zinc-50;
+        }
+
+        .bullets {
+            @apply list-disc list-outside text-sm leading-snug ml-4;
+        }
 }
